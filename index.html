@@ -5,121 +5,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Crocodilo Colorido</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Comic Neue', sans-serif;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fffaf3;
       margin: 0;
       padding: 0;
-      background-color: #fef9f3;
-      color: #333;
     }
     header {
-      background-color: #b1e5d3;
+      background-color: #b2e4da;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
+      position: relative;
     }
-    header img {
+    header img.logo {
       width: 200px;
+      height: auto;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0.5rem 0 0;
+    .mascote {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 140px;
+      height: auto;
+      z-index: 10;
     }
     nav {
-      background-color: #ffdf91;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
+      background-color: #ffe28a;
       padding: 1rem;
+      text-align: center;
     }
     nav a {
+      margin: 0 1rem;
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
     section {
-      padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
     }
     .card {
-      background-color: #fff5d1;
-      padding: 1.5rem;
-      border-radius: 1rem;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-      margin-bottom: 1.5rem;
-    }
-    footer {
-      background-color: #b1e5d3;
-      text-align: center;
+      background-color: #fff8d6;
       padding: 1rem;
-      font-size: 0.9rem;
+      border-radius: 12px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      font-size: 1.1rem;
+      font-weight: bold;
+      min-width: 150px;
+      text-align: center;
     }
-  
-  .mascote {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 140px;
-    height: auto;
-    z-index: 10;
-  }
-</style>
+  </style>
 </head>
 <body>
   <header>
-  <img src="mascote.png" alt="Mascote Crocodilo" class="mascote">
-    <img src="crocodilo-logo.png" alt="Crocodilo simpático colorido">
+    <img src="crocodilo-logo.png" alt="Crocodilo simpático colorido" class="logo">
+    <img src="mascote.png" alt="Mascote Crocodilo" class="mascote">
     <h1>Crocodilo Colorido</h1>
     <p>Recursos educativos criativos para casa e sala de aula</p>
   </header>
-
   <nav>
-    <a href="#recursos">Recursos</a>
-    <a href="#professores">Para Professores</a>
-    <a href="#encarregados">Para EE</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#apoio">Apoiar</a>
+    <a href="#">Recursos</a>
+    <a href="#">Para Professores</a>
+    <a href="#">Para EE</a>
+    <a href="#">Sobre</a>
+    <a href="#">Apoiar</a>
   </nav>
-
-  <section id="recursos">
-    <div class="card">
-      <h2>📚 Recursos Educativos</h2>
-      <p>Explora fichas, jogos e cartazes prontos a usar. Brevemente com filtro por idade e tema.</p>
-    </div>
-  </section>
-
   <section id="professores">
-    <div class="card">
-      <h2>👩‍🏫 Para Professores</h2>
-      <p>Planos, dicas e recursos para enriquecer as tuas aulas com criatividade.</p>
+    <h2>Para Professores</h2>
+    <div class="cards">
+      <div class="card">📚 Português</div>
+      <div class="card">➕ Matemática</div>
+      <div class="card">🌍 Estudo do Meio</div>
+      <div class="card">🎨 Expressões</div>
+      <div class="card">📝 Avaliações</div>
+      <div class="card">📅 Dias Comemorativos</div>
+      <div class="card">📂 Documentos</div>
+      <div class="card">🎒 Início do Ano Letivo</div>
     </div>
   </section>
-
-  <section id="encarregados">
-    <div class="card">
-      <h2>🏡 Para Encarregados de Educação</h2>
-      <p>Atividades educativas para fazer em casa com os mais pequenos.</p>
-    </div>
-  </section>
-
-  <section id="sobre">
-    <div class="card">
-      <h2>🎨 Sobre o Projeto</h2>
-      <p>O Crocodilo Colorido é um projeto português que visa tornar a aprendizagem divertida e acessível para todos. Criado com carinho por [teu nome].</p>
-    </div>
-  </section>
-
-  <section id="apoio">
-    <div class="card">
-      <h2>💖 Apoia o Projeto</h2>
-      <p>Gosta do nosso conteúdo? Partilha ou apoia com um café virtual ☕</p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Crocodilo Colorido. Todos os direitos reservados.
-  </footer>
 </body>
 </html>
